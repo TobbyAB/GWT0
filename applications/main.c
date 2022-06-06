@@ -27,6 +27,9 @@ int main(void)
         LOG_D("Hello RT-Thread cubemx! %d",i);
 
         rt_thread_mdelay(1000);
+        if (i == 255) {
+            i  =1;
+        }
     }
 
     return RT_EOK;
