@@ -67,6 +67,10 @@ extern "C"
  *
  */
 
+#define BSP_USING_UART1
+#define BSP_UART1_TX_PIN       "PA9"
+#define BSP_UART1_RX_PIN       "PA10"
+
 #define BSP_USING_UART2
 #define BSP_UART2_TX_PIN       "PA2"
 #define BSP_UART2_RX_PIN       "PA3"
@@ -117,8 +121,8 @@ extern "C"
  *                 such as     #define HAL_SPI_MODULE_ENABLED
  */
 
-/*#define BSP_USING_SPI1*/
-/*#define BSP_USING_SPI2*/
+#define BSP_USING_SPI1
+#define BSP_USING_SPI2
 /*#define BSP_USING_SPI3*/
 
 /*-------------------------- SPI CONFIG END --------------------------*/

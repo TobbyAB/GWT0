@@ -95,6 +95,12 @@
 #define RT_USING_SERIAL_V1
 #define RT_SERIAL_RB_BUFSZ 64
 #define RT_USING_PIN
+#define RT_USING_SPI
+#define RT_USING_SFUD
+#define RT_SFUD_USING_SFDP
+#define RT_SFUD_USING_FLASH_INFO_TABLE
+#define RT_SFUD_SPI_MAX_HZ 50000000
+#define RT_USING_WDT
 
 /* Using USB */
 
@@ -211,6 +217,25 @@
 /* Micrium: Micrium software products porting for RT-Thread */
 
 /* end of Micrium: Micrium software products porting for RT-Thread */
+#define PKG_USING_FAL
+#define FAL_DEBUG 0
+#define FAL_PART_HAS_TABLE_CFG
+#define FAL_USING_SFUD_PORT
+#define FAL_USING_NOR_FLASH_DEV_NAME "norflash0"
+#define PKG_USING_FAL_V00500
+#define PKG_FAL_VER_NUM 0x00500
+#define PKG_USING_SYSWATCH
+#define SYSWATCH_EXCEPT_RESOLVE_MODE_2
+#define SYSWATCH_EXCEPT_RESOLVE_MODE 2
+#define SYSWATCH_EXCEPT_TIMEOUT 60
+#define SYSWATCH_EXCEPT_CONFIRM_TMO 15
+#define SYSWATCH_EXCEPT_RESUME_DLY 15
+#define SYSWATCH_THREAD_PRIO 0
+#define SYSWATCH_THREAD_STK_SIZE 512
+#define SYSWATCH_THREAD_NAME "syswatch"
+#define SYSWATCH_WDT_NAME "wdt"
+#define SYSWATCH_WDT_TIMEOUT 5
+#define PKG_USING_SYSWATCH_LATEST_VERSION
 /* end of system packages */
 
 /* peripheral libraries and drivers */
