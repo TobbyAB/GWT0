@@ -20,7 +20,7 @@ int main(void)
 
     while (count++)
     {
-        LOG_D("Hello RT-Thread! %d",count);
+        LOG_D("Hello RT-Thread cubemx! %d",count);
         rt_thread_mdelay(1000);
     }
 
