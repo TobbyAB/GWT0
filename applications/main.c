@@ -26,7 +26,7 @@ int main(void)
     {
         LOG_D("Hello RT-Thread cubemx! %d",i);
 
-        rt_thread_mdelay(1000);
+        rt_thread_mdelay(10000);
         if (i == 255) {
             i  =1;
         }
