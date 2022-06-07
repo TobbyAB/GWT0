@@ -18,14 +18,15 @@
 
 int main(void)
 {
-//    int count = 1;
+    int count = 1;
     flash_Init();
     uint8_t i = 1 ;
 
     while (i++)
     {
         LOG_D("Hello RT-Thread cubemx! %d",i);
-
+        LOG_D("Hello RT-Thread count! %d",count);
+        count++;
         rt_thread_mdelay(10000);
         if (i == 255) {
             i  =1;

@@ -5,7 +5,7 @@
 
 /* RT-Thread Kernel */
 
-#define RT_NAME_MAX 16
+#define RT_NAME_MAX 8
 #define RT_ALIGN_SIZE 4
 #define RT_THREAD_PRIORITY_32
 #define RT_THREAD_PRIORITY_MAX 32
@@ -17,7 +17,7 @@
 #define IDLE_THREAD_STACK_SIZE 256
 #define RT_USING_TIMER_SOFT
 #define RT_TIMER_THREAD_PRIO 4
-#define RT_TIMER_THREAD_STACK_SIZE 2048
+#define RT_TIMER_THREAD_STACK_SIZE 512
 
 /* kservice optimization */
 
@@ -109,6 +109,7 @@
 
 /* POSIX layer and C standard library */
 
+#define RT_USING_LIBC
 #define RT_LIBC_USING_TIME
 #define RT_LIBC_DEFAULT_TIMEZONE 8
 /* end of POSIX layer and C standard library */
@@ -138,6 +139,7 @@
 
 /* Utilities */
 
+#define RT_USING_RYM
 /* end of Utilities */
 /* end of RT-Thread Components */
 
@@ -194,6 +196,14 @@
 
 /* tools packages */
 
+#define PKG_USING_EASYFLASH
+#define PKG_EASYFLASH_ENV
+#define PKG_EASYFLASH_ERASE_GRAN 131072
+#define PKG_EASYFLASH_WRITE_GRAN_8BITS
+#define PKG_EASYFLASH_WRITE_GRAN 8
+#define PKG_EASYFLASH_START_ADDR 0
+#define PKG_USING_EASYFLASH_V410
+#define PKG_EASYFLASH_VER_NUM 0x40100
 /* end of tools packages */
 
 /* system packages */
@@ -240,6 +250,20 @@
 
 /* peripheral libraries and drivers */
 
+#define PKG_USING_BUTTON
+#define BUTTON_DEBOUNCE_TIME 1
+#define BUTTON_CONTINUOS_CYCLE 1
+#define BUTTON_LONG_CYCLE 25
+#define BUTTON_DOUBLE_TIME 15
+#define BUTTON_LONG_TIME 200
+#define PKG_USING_BUTTON_V101
+#define PKG_USING_AGILE_LED
+#define PKG_AGILE_LED_DEBUG
+#define PKG_AGILE_LED_USING_THREAD_AUTO_INIT
+#define PKG_AGILE_LED_THREAD_STACK_SIZE 256
+#define PKG_AGILE_LED_THREAD_PRIORITY 28
+#define PKG_USING_AGILE_LED_V111
+#define PKG_AGILE_LED_VER_NUM 0x10101
 /* end of peripheral libraries and drivers */
 
 /* AI packages */
