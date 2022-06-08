@@ -10,6 +10,6 @@
 #ifndef APPLICATIONS_KEY_H_
 #define APPLICATIONS_KEY_H_
 
-void Key_Reponse_Init(void);
+void Key_Response_Init(void);
 
 #endif /* APPLICATIONS_KEY_H_ */
