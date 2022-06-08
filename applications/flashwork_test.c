@@ -29,7 +29,7 @@ int flash_Init(void)
     extern rt_spi_flash_device_t rt_sfud_flash_probe(const char *spi_flash_dev_name, const char *spi_dev_name);
     status = rt_hw_spi_device_attach("spi1", "spi10", GPIOA, GPIO_PIN_4);
     if (status == 0) {
-          LOG_E("spi_init success\r\n");
+          LOG_I("spi_init success\r\n");
           return RT_ERROR;
       }
     fm25q16 = rt_sfud_flash_probe("norflash0", "spi10");
